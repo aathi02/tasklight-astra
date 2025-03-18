@@ -13,16 +13,17 @@ import {
   Users, 
   Bell
 } from 'lucide-react';
+import { Task, Priority, Status } from '@/types';
 
 // Sample data for tasks
-const tasks = [
+const tasks: Task[] = [
   {
     id: 1,
     title: 'Design System Updates',
     description: 'Update the design system components to match the new brand guidelines',
     dueDate: 'Oct 15',
-    priority: 'high',
-    status: 'in-progress',
+    priority: 'high' as Priority,
+    status: 'in-progress' as Status,
     progress: 60,
     assignee: {
       name: 'Sarah Chen',
@@ -35,8 +36,8 @@ const tasks = [
     title: 'API Integration',
     description: 'Integrate the payment gateway API with the checkout flow',
     dueDate: 'Oct 20',
-    priority: 'medium',
-    status: 'pending',
+    priority: 'medium' as Priority,
+    status: 'pending' as Status,
     progress: 0,
     assignee: {
       name: 'Mike Johnson',
@@ -49,8 +50,8 @@ const tasks = [
     title: 'User Testing',
     description: 'Conduct user testing sessions for the new dashboard interface',
     dueDate: 'Oct 12',
-    priority: 'low',
-    status: 'completed',
+    priority: 'low' as Priority,
+    status: 'completed' as Status,
     progress: 100,
     assignee: {
       name: 'Alex Wong',
@@ -63,8 +64,8 @@ const tasks = [
     title: 'Documentation Update',
     description: 'Update the API documentation with the new endpoints',
     dueDate: 'Oct 18',
-    priority: 'medium',
-    status: 'in-progress',
+    priority: 'medium' as Priority,
+    status: 'in-progress' as Status,
     progress: 30,
     assignee: {
       name: 'John Doe',
